@@ -1,0 +1,627 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --marrom-escuro: #4B2E2E;
+    --marrom-medio: #8B5A2B;
+    --bege-claro: #F3E5AB;
+    --branco: #FFF;
+}
+
+
+
+.navbar-custom {
+    display: flex;
+    gap: 40px;
+    justify-content: center !important;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--marrom-escuro) !important;
+    border-bottom: 3px solid var(--marrom-medio) !important;
+}
+
+.navbar-brand {
+    color: var(--branco) !important;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.navbar-custom input {
+    width: 100%;
+    border: 2px solid var(--marrom-medio);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Navbar toggler (hamburguer button) */
+.navbar-toggler {
+    display: none; /* Inicialmente escondido em telas grandes */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-outline-success {
+    color: var(--marrom-medio);
+    border-color: var(--marrom-medio);
+}
+
+form input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--marrom-medio);
+    color: var(--branco);
+}
+
+.icones {
+    font-size: 24px;
+    display: flex;
+    gap: 15px;
+    color: var(--bege-claro);
+    cursor: pointer;
+   
+}
+
+
+.icones i:hover {
+    color: var(--marrom-medio);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+:root {
+    --marrom-escuro: #4B2E2E;
+    --marrom-medio: #8B5A2B;
+    --bege-claro: #F3E5AB;
+    --branco: #FFF;
+}
+
+/* Submenu */
+.submenu {
+    background-color: var(--marrom-escuro); /* Cor de fundo do submenu */
+    padding: 10px 0;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para os itens da lista */
+.submenu ul {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 0; /* Remove o margin */
+    padding: 0; /* Remove o padding */
+}
+
+.submenu li {
+    padding: 10px; /* Espaçamento entre os itens */
+    list-style: none; /* Remove a bolinha dos itens da lista */
+    background-color: var(--branco); /* Cor de fundo dos itens */
+    margin: 0 10px; /* Espaçamento entre os itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: 0.3s; /* Transição suave */
+}
+
+.submenu li a {
+    color: var(--marrom-escuro); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo quando o item é clicado (selecionado) */
+.submenu li:focus {
+    background-color: var(--marrom-escuro); /* Cor de fundo quando clicado */
+    transform: scale(1.05); /* Efeito de aumento */
+}
+
+.submenu li:focus a {
+    color: var(--branco); /* Cor do texto quando clicado */
+}
+
+/* Efeito de hover */
+.submenu li:hover {
+    background-color: var(--marrom-escuro); /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento */
+}
+
+.submenu li:hover a {
+    color: var(--branco); /* Cor do texto ao passar o mouse */
+}
+
+.dropdown button {
+    background-color: var(--branco);
+    color: var(--marrom-escuro);
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center; /* Alinhamento centralizado */
+}
+
+.dropdown button:hover {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+}
+
+.carousel-container {
+    background-color: var(--marrom-escuro);
+    padding: 20px 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ---- CARDS ---- */
+.card {
+    background-color: var(--bege-claro);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card-img-top1 {
+    height: 20%;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body  {
+    text-align: center;
+}
+
+.card-body1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-title {
+    color: var(--marrom-escuro);
+    font-weight: bold;
+}
+
+.card-text {
+    color: var(--marrom-medio);
+}
+
+.btn-primary {
+    background-color: var(--marrom-escuro);
+    border: none;
+    transition: 0.3s;
+}
+
+.card .btn-primary {
+    background-color: var(--marrom-escuro) !important;
+    border: none;
+    transition: 0.3s;
+}
+
+.card .btn-primary:hover {
+    background-color: var(--marrom-medio) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--marrom-medio);
+}
+
+.card-img-top5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.formulario {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #4B2E2E;
+    margin: auto;
+    padding: 20px;
+    gap: 115px;
+}
+
+.desing {
+    border: 2px solid #8B5A2B;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5ecec;
+    margin: auto;
+    max-width: 400px;
+}
+
+.formulario h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario .btn-primary {
+    background-color: var(--marrom-escuro) !important;
+    border: none;
+    transition: 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select,
+.header input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--marrom-medio);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus,
+.form input:focus {
+    border-color: var(--marrom-escuro);
+    box-shadow: 0 0 5px var(--marrom-escuro);
+}
+
+.formulario .btn-primary:hover {
+    background-color: var(--marrom-medio) !important;
+}
+
+.navbar-custom form .form-control:focus {
+    border-color: var(--marrom-escuro) !important;
+    box-shadow: 0 0 5px var(--marrom-escuro) !important;
+}
+
+.navbar-custom form .btn-outline-success {
+    background-color: #4B2E2E;
+    border: 2px solid var(--marrom-medio);
+}
+
+.navbar-custom form .btn-outline-success:hover {
+    background-color: #6f5252;
+}
+
+.navbar-custom form .btn-outline-success {
+    background-color: #4B2E2E;
+    border: 2px solid var(--marrom-medio);
+    color: #f5ecec;
+}
+
+.fot {
+    display: block;
+    background-color: #f5ecec;
+    justify-items: center;
+    padding: 10px;
+}
+
+.icons i {
+    max-width: 80px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.menu-hamburguer {
+    background-color: var(--marrom-escuro);  /* Cor de fundo marrom escuro */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;  /* Bordas arredondadas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 45px;
+    margin-right: 15px;
+}
+
+.menu-hamburguer i {
+    color: var(--branco);  /* Ícone branco */
+    font-size: 24px;  /* Tamanho do ícone */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.menu-hamburguer:hover {
+    background-color: var(--marrom-medio);  /* Mudança de cor para marrom médio */
+}
+
+/* Efeito ao passar o mouse sobre o ícone */
+.menu-hamburguer:hover i {
+    transform: scale(1.1);  /* Aumenta o tamanho do ícone levemente */
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #F3E5AB;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Exibindo o submenu quando o botão de hambúrguer é clicado */
+.menu-hamburguer.open + .submenu {
+    display: block;
+}
+
+/* Para telas menores que 768px, o botão de hambúrguer é visível */
+/* Estilo para telas menores que 768px */
+/* Estilo para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    /* Toggler do menu (hamburguer) */
+    .navbar-toggler {
+        display: block; /* Exibe o botão de hambúrguer */
+        background-color: var(--marrom-escuro); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--branco); /* Cor do ícone */
+    }
+
+    /* Esconde a navegação normal em telas menores */
+    .navbar-collapse {
+        display: none; /* Esconde o menu de navegação padrão */
+    }
+
+    /* O submenu começa escondido */
+    .submenu {
+        display: none; /* Inicialmente oculto */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        background-color: var(--marrom-escuro); /* Fundo marrom escuro */
+        padding: 10px 0;
+        width: 100%; /* Largura total */
+        margin-top: 10px; /* Espaço no topo */
+    }
+
+    /* Exibe o submenu quando o botão de hambúrguer tem a classe 'open' */
+    .menu-hamburguer.open + .submenu {
+        display: block; /* Mostra o submenu quando a classe 'open' for adicionada */
+    }
+
+    /* Estilo para os itens de submenu */
+    .submenu ul {
+        display: flex; /* Alinha os itens em linha */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        padding: 0;
+        margin: 0;
+    }
+
+    .submenu li {
+        width: 100%; /* Largura total */
+        padding: 15px 0; /* Espaçamento nos itens */
+        text-align: center; /* Alinha o texto */
+        background-color: var(--marrom-escuro); /* Cor de fundo dos itens (marrom escuro) */
+        margin: 5px 0; /* Espaçamento entre os itens */
+        border-radius: 5px; /* Bordas arredondadas */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    }
+
+    .submenu li a {
+        color: #F3E5AB; /* Texto branco nos links */
+        text-decoration: none; /* Remove sublinhado */
+        font-size: 18px; /* Tamanho do texto */
+        font-weight: bold; /* Texto em negrito */
+    }
+
+    /* Efeito ao passar o mouse ou clicar */
+    .submenu li:hover,
+    .submenu li:focus {
+        background-color: var(--marrom-medio); /* Fundo marrom médio ao passar o mouse */
+        transform: scale(1.05); /* Efeito de aumento */
+    }
+
+    .submenu li:hover a,
+    .submenu li:focus a {
+        color: var(--branco); /* Mantém o texto branco ao passar o mouse ou clicar */
+    }
+
+    /* Ajustes gerais */
+    .header2 {
+        display:none;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column; /* Empilha os itens verticalmente */
+    }
+
+
+
+    
+    .navbar2 {
+        display: none; /* Esconde a navbar adicional */
+    }
+
+    .card {
+        width:  120%;
+      
+
+     }
+
+     .col-md-3 {
+        padding-left: 0 !important;
+    }
+    
+
+
+     .row{
+       
+        padding-right: 48px !important;
+     }
+     .card-body1{
+        width: 45%;
+        margin-left: 21%;
+     }
+     .card-img-top5{
+        width: 53%;
+        margin-right: 31%;
+     }
+     .icones{
+        margin-left: 10%;
+     }
+
+   .card-body{
+    max-height: 90%;
+   }
+     .menu-hamburguer{
+        margin-right: 40%;
+     }
+
+  
+     /*margin left deixou certo o carrosel*/
+     .carousel-item img{
+        max-width: 90%;
+        margin-left: 5% !important;
+     }
+
+     .destaque {
+        max-width: 90%;
+        height:30% !important ;
+        margin-left: 5% !important;
+     }
+
+     /* Remover padding-left de todos os elementos filhos dentro de .row */
+
+     
+}
+
+
+/* Para telas maiores que 768px, o botão de hambúrguer deve estar oculto */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    .header{
+        display: flex;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+
+    .card-body{
+        max-width: 110%;
+        
+     }
+
+     .card{
+        max-width: 190%;
+
+ 
+     }
+
+     .card-text  {
+        max-width: 110%;
+     }
+
+    .btn-primary{
+        padding-top: 15%;
+    }
+
+
+
+
+    .submenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-hamburguer {
+        display: none;
+        
+    }
+    
+
+    .header1{
+        display: contents;
+    }
+    
+    .navbar2{
+        display: block;
+        
+    }
+
+     .navbar-brand{
+        margin-top: 8px;
+        font-size: 20px !important; 
+    }
+
+    .navbar{
+        display: none!important;
+    }
+    .card {
+        width:  120%;
+   
+      
+     }
+
+     .row{
+        margin: 0 !important;
+        margin-right:  30px !important;
+        
+     }
+
+     .card-body{
+        width: 105%;
+        margin-right: 120% !important;
+
+
+     }
+     .card-body1{
+        width: 45%;
+        margin-left: 21%;
+     }
+     .card-img-top5{
+        width: 53%;
+        margin-right: 31%;
+     }
+     .icones{
+        margin-right: 10%;
+     }
+ 
+
+   
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+    .navbar-custom{
+        display: none;
+    }
+
+    .header1{
+        display: flex;
+    }
+
+ 
+    
+}
