@@ -88,57 +88,54 @@ form button {
     --branco: #FFF;
 }
 
-/* Submenu */
 .submenu {
-    background-color: var(--marrom-escuro); /* Cor de fundo do submenu */
+    background-color: var(--marrom-escuro);
     padding: 10px 0;
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para os itens da lista */
 .submenu ul {
-    display: flex; /* Exibe os itens em linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-    margin: 0; /* Remove o margin */
-    padding: 0; /* Remove o padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .submenu li {
-    padding: 10px; /* Espaçamento entre os itens */
-    list-style: none; /* Remove a bolinha dos itens da lista */
-    background-color: var(--branco); /* Cor de fundo dos itens */
-    margin: 0 10px; /* Espaçamento entre os itens */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: 0.3s; /* Transição suave */
+    padding: 10px;
+    list-style: none;
+    background-color: var(--branco);
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
 
 .submenu li a {
-    color: var(--marrom-escuro); /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Texto em negrito */
+    color: var(--marrom-escuro);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-/* Estilo quando o item é clicado (selecionado) */
 .submenu li:focus {
-    background-color: var(--marrom-escuro); /* Cor de fundo quando clicado */
-    transform: scale(1.05); /* Efeito de aumento */
+    background-color: var(--marrom-escuro);
+    transform: scale(1.05);
 }
 
 .submenu li:focus a {
-    color: var(--branco); /* Cor do texto quando clicado */
+    color: var(--branco);
 }
 
-/* Efeito de hover */
 .submenu li:hover {
-    background-color: var(--marrom-escuro); /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Efeito de aumento */
+    background-color: var(--marrom-escuro);
+    transform: scale(1.05);
 }
 
 .submenu li:hover a {
-    color: var(--branco); /* Cor do texto ao passar o mouse */
+    color: var(--branco); 
 }
 
 .dropdown button {
@@ -149,7 +146,7 @@ form button {
     font-weight: bold;
     border-radius: 5px;
     transition: 0.3s;
-    text-align: center; /* Alinhamento centralizado */
+    text-align: center; 
 }
 
 .dropdown button:hover {
@@ -170,15 +167,37 @@ form button {
 }
 
 /* ---- CARDS ---- */
-.card {
-    background-color: var(--bege-claro);
-    border-radius: 10px;
-    transition: 0.3s;
+
+
+.destaque .card {
+    background-color: #FFF !important;
+    border-radius: 10px !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+    cursor: pointer !important;
+    will-change: transform !important;
 }
 
+.destaque .card:hover {
+    transform: translateY(-10px) scale(1.05) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+    background-color:  #F3E5AB !important; 
+}
+
+
+.destaque .card-body {
+    background-color: transparent !important;
+  }
+  
+  .destaque .card-img-top1 {
+    background-color: transparent !important;
+  }
+  
+  
+
 .card-img-top1 {
-    height: 20%;
-    width: 100%;
+  
+    width: 80%;
+  
 }
 
 .card:hover {
@@ -223,6 +242,7 @@ form button {
 .btn-primary:hover {
     background-color: var(--marrom-medio);
 }
+
 
 .card-img-top5 {
     display: flex;
@@ -330,10 +350,10 @@ form button {
 }
 
 .menu-hamburguer {
-    background-color: var(--marrom-escuro);  /* Cor de fundo marrom escuro */
+    background-color: var(--marrom-escuro);  
     border: none;
     padding: 10px;
-    border-radius: 5px;  /* Bordas arredondadas */
+    border-radius: 5px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,14 +364,13 @@ form button {
 }
 
 .menu-hamburguer i {
-    color: var(--branco);  /* Ícone branco */
-    font-size: 24px;  /* Tamanho do ícone */
+    color: var(--branco);  
+    font-size: 24px; 
     transition: transform 0.3s ease;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
 .menu-hamburguer:hover {
-    background-color: var(--marrom-medio);  /* Mudança de cor para marrom médio */
+    background-color: var(--marrom-medio); 
 }
 
 /* Efeito ao passar o mouse sobre o ícone */
@@ -372,16 +391,16 @@ form button {
     display: block;
 }
 
-/* Para telas menores que 768px, o botão de hambúrguer é visível */
-/* Estilo para telas menores que 768px */
-/* Estilo para telas menores que 768px */
+
 @media screen and (max-width: 768px) {
-    /* Toggler do menu (hamburguer) */
+
+    
+   
     .navbar-toggler {
-        display: block; /* Exibe o botão de hambúrguer */
-        background-color: var(--marrom-escuro); /* Cor de fundo do botão */
-        border: none; /* Remove a borda */
-        color: var(--branco); /* Cor do ícone */
+        display: block; 
+        background-color: var(--marrom-escuro); 
+        border: none; 
+        color: var(--branco); 
     }
 
     /* Esconde a navegação normal em telas menores */
@@ -391,59 +410,61 @@ form button {
 
     /* O submenu começa escondido */
     .submenu {
-        display: none; /* Inicialmente oculto */
-        flex-direction: column; /* Empilha os itens verticalmente */
-        align-items: center; /* Centraliza os itens */
-        background-color: var(--marrom-escuro); /* Fundo marrom escuro */
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        background-color: var(--marrom-escuro); 
         padding: 10px 0;
-        width: 100%; /* Largura total */
-        margin-top: 10px; /* Espaço no topo */
+        width: 100%; 
+        margin-top: 10px; 
     }
 
-    /* Exibe o submenu quando o botão de hambúrguer tem a classe 'open' */
+        .hamb{
+            margin-right: 2%;
+        }
+    
     .menu-hamburguer.open + .submenu {
         display: block; /* Mostra o submenu quando a classe 'open' for adicionada */
     }
 
-    /* Estilo para os itens de submenu */
     .submenu ul {
-        display: flex; /* Alinha os itens em linha */
-        flex-direction: column; /* Empilha os itens verticalmente */
-        align-items: center; /* Centraliza os itens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
         margin: 0;
     }
-
+    
     .submenu li {
-        width: 100%; /* Largura total */
-        padding: 15px 0; /* Espaçamento nos itens */
-        text-align: center; /* Alinha o texto */
-        background-color: var(--marrom-escuro); /* Cor de fundo dos itens (marrom escuro) */
-        margin: 5px 0; /* Espaçamento entre os itens */
-        border-radius: 5px; /* Bordas arredondadas */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        background-color: var(--marrom-escuro);
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
-
+    
     .submenu li a {
-        color: #F3E5AB; /* Texto branco nos links */
-        text-decoration: none; /* Remove sublinhado */
-        font-size: 18px; /* Tamanho do texto */
-        font-weight: bold; /* Texto em negrito */
+        color: #F3E5AB;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
     }
-
-    /* Efeito ao passar o mouse ou clicar */
+    
     .submenu li:hover,
     .submenu li:focus {
-        background-color: var(--marrom-medio); /* Fundo marrom médio ao passar o mouse */
-        transform: scale(1.05); /* Efeito de aumento */
+        background-color: var(--marrom-medio);
+        transform: scale(1.05);
     }
+    
 
     .submenu li:hover a,
     .submenu li:focus a {
-        color: var(--branco); /* Mantém o texto branco ao passar o mouse ou clicar */
+        color: var(--branco); 
     }
 
-    /* Ajustes gerais */
+  
     .header2 {
         display:none;
         display: flex;
@@ -461,29 +482,46 @@ form button {
     }
 
     .card {
-        width:  120%;
+        width:  100%;
+
+     }
+
+     .card-img-top1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
       
+      .card-img-top1 {
+        max-width: 90%;
+        height: auto;
+      }
 
-     }
-
-     .col-md-3 {
-        padding-left: 0 !important;
-    }
-    
-
-
-     .row{
-       
-        padding-right: 48px !important;
-     }
-     .card-body1{
-        width: 45%;
-        margin-left: 21%;
+      .card-body1{
+        max-width: 80%;
+        margin-left: 10%;
      }
      .card-img-top5{
-        width: 53%;
-        margin-right: 31%;
+   
+        margin-left: 16%;
      }
+
+ 
+ 
+     .col-md-3 {
+        padding-left: 0 !important;
+      
+    }
+
+    .card-img-top5{
+        padding-left: 10%;
+    }
+
+
+     .row {
+      padding-right: 2%;
+      }
+      
      .icones{
         margin-left: 10%;
      }
@@ -510,13 +548,15 @@ form button {
 
      /* Remover padding-left de todos os elementos filhos dentro de .row */
 
-     
+
 }
 
 
 /* Para telas maiores que 768px, o botão de hambúrguer deve estar oculto */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
 
+
+  
     .header{
         display: flex;
     }
@@ -576,31 +616,49 @@ form button {
     .navbar{
         display: none!important;
     }
-    .card {
-        width:  120%;
-   
+ 
+
+     .card {
+        width:  100%;
+    
+        overflow: hidden; /* isso ajuda a evitar que conteúdo ultrapasse */
+      }
+      .card {
+        height: auto; /* Altura conforme o conteúdo */
+      }
       
-     }
+
+    
 
      .row{
-        margin: 0 !important;
+     
         margin-right:  30px !important;
+ 
         
      }
 
-     .card-body{
-        width: 105%;
-        margin-right: 120% !important;
+ 
 
+    
 
-     }
+      .card-img-top1 {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto I !important;
+        margin-bottom: 15px; 
+      
+      }
+      
      .card-body1{
-        width: 45%;
-        margin-left: 21%;
+        width: 55%;
+        margin-left: 23%;
      }
+     
      .card-img-top5{
         width: 53%;
-        margin-right: 31%;
+        margin-left: 24%;
      }
      .icones{
         margin-right: 10%;
